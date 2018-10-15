@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    
+    <VideoView 
+       android:id="@+id/videoView" 
+       android:layout_width="match_parent" 
+       android:layout_height="match_parent"
+       android:focusable="false" 
+       />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        >
+        <EditText 
+	        android:id="@+id/edit_url"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:gravity="center_vertical|left"
+	        android:textSize="18sp"
+	        android:textColor="@android:color/white"
+	        android:singleLine="true"
+	        /> 
+	        
+	    <Button 
+		    android:id="@+id/btn_play"
+	        android:layout_width="200dp"
+	        android:layout_height="50dp"
+	        android:gravity="center"
+	        android:text="播放"
+	        android:textSize="22sp"
+	        android:textColor="@android:color/white"
+	        android:onClick="onClick"
+	        android:focusable="true"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/txt_status"
+	        android:layout_width="wrap_content"
+	        android:layout_height="50dp"
+	        android:gravity="center"
+	        android:textSize="18sp"
+	        android:textColor="@android:color/white"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/txt_progress"
+	        android:layout_width="wrap_content"
+	        android:layout_height="50dp"
+	        android:gravity="center"
+	        android:textSize="18sp"
+	        android:textColor="@android:color/white"
+	        />
+    </LinearLayout>
+    
+</RelativeLayout>
